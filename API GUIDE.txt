@@ -1,0 +1,21 @@
+1. GET /books
+
+2. POST /books
+ {
+    "title": "Macbeth",
+    "author": "William Shakespeare",
+    "type": "Fiction",
+    "dateAdded": "${dateTimeValue}"
+  }
+3. PUT /books/{id}
+{
+	"title":"Rich Dad Poor Dad",
+	"author":"Robert T. Kiyosaki",
+	"type": "non fiction",
+	"dateAdded": "${dateTimeValue}"
+}
+
+4. DELETE /books/{id}
+(Requires Authorization Header e.g. "authorization": "eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJkYXRhIjoiZm9vYmFyIiwiaWF0IjoxNjY3MTM2OTE3fQ.ZmNkw6nD_RB98uuoJQMcVFw-BNllarmiDDmX6i38IpE")
+
+5. POST /books/authToken
